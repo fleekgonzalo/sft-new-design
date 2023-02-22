@@ -2,8 +2,3 @@
   Hello world!
 </h1>
 
-<style lang="postcss">
-    :global(html) {
-        background-color: #c284ff;
-    }
-</style>

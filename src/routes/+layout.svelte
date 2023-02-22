@@ -8,12 +8,12 @@
       <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sidebar2-svg1.svg" alt="logo"/>
     </div>
     <div class="mt-6 flex flex-col justify-start items-center pl-5 w-full">
-      <a href="/"
-         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  text-black rounded py-2">
+      <a href=""
+         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400 rounded py-2 text-nav font-semibold">
         <p class="text-base leading-4">SFT</p>
       </a>
       <a href="/"
-         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  text-black rounded py-2">
+         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-text-black rounded py-2 font-bold">
         <div class="w-3">
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -24,7 +24,7 @@
         <p class="text-base leading-4  ">Home</p>
       </a>
       <a href="/mint"
-         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  text-black rounded py-2">
+         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-text-black rounded py-2 font-bold">
         <div class="w-3">
           <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -35,7 +35,7 @@
         <p class="text-base leading-4  ">Mint/Redeem</p>
       </a>
       <a href="/members"
-         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  text-black rounded py-2">
+         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-text-black rounded py-2 font-bold">
         <div class="w-3">
           <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -46,7 +46,7 @@
         <p class="text-base leading-4  ">Members</p>
       </a>
       <a href="/roles"
-         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  text-black rounded py-2">
+         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-text-black rounded py-2 font-bold">
         <div class="w-3">
           <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -57,7 +57,7 @@
         <p class="text-base leading-4  ">SFT Roles</p>
       </a>
       <a href="/audits"
-         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  text-black rounded py-2">
+         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-text-black rounded py-2 font-bold">
         <div class="w-3">
           <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -68,7 +68,7 @@
         <p class="text-base leading-4  ">Audits</p>
       </a>
       <a href="/asset-register"
-         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  text-black rounded py-2">
+         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-text-black rounded py-2 font-bold">
         <div class="w-3">
           <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -79,7 +79,7 @@
         <p class="text-base leading-4  ">Asset Register</p>
       </a>
       <a href="/manual"
-         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  text-black rounded py-2">
+         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-text-black rounded py-2 font-bold">
         <div class="w-3">
           <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -90,14 +90,14 @@
         <p class="text-base leading-4  ">Manual</p>
       </a>
     </div>
-      <div class="items-center pt-16 border-b w-11/12 self-center"></div>
+    <div class="items-center pt-16 border-b w-11/12 self-center"></div>
     <div class="mt-6 flex flex-col justify-start items-center pl-5 w-full">
-      <a href="#"
-         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  text-black rounded py-2">
+      <a href=""
+         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400 rounded py-2 text-nav font-semibold">
         <p class="text-base leading-4">Web 3</p>
       </a>
       <a href="/ipfs"
-         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  text-black rounded py-2">
+         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-text-black rounded py-2 font-bold">
         <div class="w-3">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -110,7 +110,7 @@
         <p class="text-base leading-4  ">IPFS</p>
       </a>
       <a href="/sft-setup"
-         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  text-black rounded py-2">
+         class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-text-black rounded py-2 font-bold">
         <div class="w-3">
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="9" cy="9" r="8" stroke="#575757" stroke-width="2" stroke-linecap="round"
@@ -123,5 +123,15 @@
   </div>
   <slot></slot>
 </div>
+
+<style>
+    .text-nav {
+        color: #5F9AD1;
+    }
+
+    .nav-text-black {
+        color: #575757;
+    }
+</style>
 
 
