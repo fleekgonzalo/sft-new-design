@@ -8,9 +8,21 @@
   </div>
   <div class="flex">
     <div id="Main"
-         class="flex justify-start items-start h-screen bg-white flex-col rounded-tr-3xl navigation mr-5">
+         class="flex justify-start items-start h-screen bg-white flex-col rounded-tr-3xl navigation mr-5 relative">
       <div class="flex justify-center items-center w-full space-x-3 logo-container">
         <img src={logo} alt="logo" class="border-8 border-white rounded-full"/>
+        <div class="cursor-pointer absolute right-2 top-2">
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 10.3999L19 5.1999M19 5.1999L19 10.3999M19 5.1999L14 5.1999" stroke="#9D9D9D" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 10.3999L19 5.1999M19 5.1999L19 10.3999M19 5.1999L14 5.1999" stroke="black" stroke-opacity="0.2"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 14.5601L5 19.7601M5 19.7601L5 14.5601M5 19.7601H10" stroke="#9D9D9D" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 14.5601L5 19.7601M5 19.7601L5 14.5601M5 19.7601H10" stroke="black" stroke-opacity="0.2"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
       </div>
       <div class="mt-6 flex flex-col justify-start items-center pl-5 w-full">
         <a href=""
