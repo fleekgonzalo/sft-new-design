@@ -1,5 +1,7 @@
 <script>
     import logo from "../../src/assets/sft_logo.svg"
+
+    export let sft = {}
 </script>
 
 <div class="w-full bg-white py-5 px-10 flex flex-row-reverse rounded-xl justify-between relative">
@@ -17,35 +19,35 @@
   <table class="w-8/12 leading-8">
     <tr>
       <td class="font-bold">Token Name</td>
-      <td class="sft-name">OPUS</td>
+      <td class="sft-name">{sft.name}</td>
     </tr>
     <tr>
       <td class="font-bold">Token Symbol</td>
-      <td class="sft-info">OPS</td>
+      <td class="sft-info">{sft.symbol}</td>
     </tr>
     <tr>
       <td class="font-bold">Creation Date</td>
-      <td class="sft-info">30/09/2021</td>
+      <td class="sft-info">{sft.date}</td>
     </tr>
     <tr>
       <td class="font-bold">Number of holders</td>
-      <td class="sft-info">3,000,000</td>
+      <td class="sft-info">{sft.holders}</td>
     </tr>
     <tr>
       <td class="font-bold">Gini Coefficient</td>
-      <td class="sft-info">0.79</td>
+      <td class="sft-info">{sft.gini_coefficient}</td>
     </tr>
     <tr>
       <td class="font-bold">Token Supply</td>
-      <td class="sft-info">123,000,000</td>
+      <td class="sft-info">{sft.token_supply}</td>
     </tr>
     <tr>
       <td class="font-bold">Name of Auditor(s)</td>
-      <td class="sft-info">KPMG</td>
+      <td class="sft-info">{sft.auditors}</td>
     </tr>
     <tr>
       <td class="font-bold">Name of issuer</td>
-      <td class="sft-info">British Land</td>
+      <td class="sft-info">{sft.issuer}</td>
     </tr>
   </table>
 </div>
