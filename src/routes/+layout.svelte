@@ -8,7 +8,7 @@
   </div>
   <div class="flex">
     <div id="Main"
-         class="flex justify-start items-start h-screen sm:w-64 bg-white flex-col rounded-tr-3xl">
+         class="flex justify-start items-start h-screen bg-white flex-col rounded-tr-3xl navigation mr-5">
       <div class="flex justify-center items-center w-full space-x-3 logo-container">
         <img src={logo} alt="logo" class="border-8 border-white rounded-full"/>
       </div>
@@ -131,6 +131,8 @@
 </div>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
     .text-nav {
         color: #5F9AD1;
     }
@@ -145,6 +147,11 @@
 
     .logo-container {
         margin-top: -30px;
+    }
+
+    .navigation {
+        min-width: 208px;
+        max-width: 208px;
     }
 </style>
 
