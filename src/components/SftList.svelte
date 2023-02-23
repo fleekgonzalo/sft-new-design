@@ -20,7 +20,9 @@
   <tbody>
   {#each sfts as sft }
     <tr>
-      <td class="flex justify-center w-10"><img class="w-5 h-5" src={logo} alt="sft logo"/></td>
+      <td class="flex justify-center w-10">
+        <img class="w-5 h-5 mt-1" src={logo} alt="sft logo"/>
+      </td>
       <td class="sft-name">{sft.name}</td>
       <td class="sft-info">{sft.symbol}</td>
       <td class="sft-info">{sft.date}</td>
