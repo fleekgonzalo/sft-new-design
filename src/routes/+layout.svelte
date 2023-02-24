@@ -1,10 +1,85 @@
 <script>
     import "../app.css";
     import logo from "../assets/sft_logo.svg"
+    import networks from "../scripts/networksConfig.js";
+    import {account, activeNetwork} from "../scripts/store.js";
+    import {formatAddress} from "../scripts/helpers.js";
+    import {ethers} from "ethers";
+
+    activeNetwork.set(networks[3])
+    let accountMenuOptions = [
+        {
+            id: "copy",
+            displayName: "Copy Address",
+            action: () => {
+                if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
+                    return navigator.clipboard.writeText($account);
+                }
+                return Promise.reject("The Clipboard API is not available.");
+            }
+        },
+        {
+            id: "view",
+            displayName: "View on Explorer",
+            action: () => {
+                window.open(`${$activeNetwork.blockExplorer}address/${$account}`);
+            },
+        }
+    ]
+
+    async function handleNetworkSelect(event) {
+        let activeNet = event.detail.selected
+        let chainId = ethers.utils.hexValue(activeNet.chainId)
+        try {
+            await window.ethereum.request({
+                method: "wallet_switchEthereumChain",
+                params: [{chainId}]
+            });
+
+        } catch (switchError) {
+            // This error code indicates that the chain has not been added to MetaMask.
+            if (switchError.code === 4902) {
+                try {
+                    await window.ethereum.request({
+                        method: "wallet_addEthereumChain",
+                        params: [
+                            {
+                                chainId: chainId,
+                                chainName: activeNet.displayName,
+                                rpcUrls: [activeNet.rpcUrl],
+                                blockExplorerUrls: [activeNet.blockExplorer],
+                                nativeCurrency: {
+                                    name: activeNet.currencySymbol,
+                                    symbol: activeNet.currencySymbol,
+                                    decimals: 18
+                                }
+                            }
+                        ]
+                    });
+                } catch (addError) {
+                    // handle "add" error
+                }
+            }
+            // handle other "switch" errors
+        }
+        // await networkChanged()
+    }
 </script>
 <div>
   <div class="header flex w-full h-14">
+    <div class="menu">
+<!--      <Select options={networks} on:select={handleNetworkSelect}-->
+<!--              label={$activeNetwork?.displayName || 'Available networks'} className={'meinMenu'}-->
+<!--              dropDownClass={'nav-dropdown'}>-->
+<!--&lt;!&ndash;            <span slot="icon" class="select-icon"><img src={icons[$activeNetwork?.icon]}&ndash;&gt;-->
+<!--&lt;!&ndash;                                                       alt={$activeNetwork?.displayName}/></span>&ndash;&gt;-->
+<!--      </Select>-->
+<!--      <Select className={'meinMenu'} options={accountMenuOptions}-->
+<!--              label={formatAddress($account)}-->
+<!--              staticLabel={true} dropDownClass={'nav-dropdown'}>-->
+<!--      </Select>-->
 
+    </div>
   </div>
   <div class="flex">
     <div id="Main"
