@@ -1,6 +1,7 @@
 <script>
     import SftTile from "../components/SftTile.svelte";
     import SftList from "../components/SftList.svelte";
+    import {sftInfo} from "../scripts/store.js";
 
     let view = "tile";
     let offchainAssetReceiptVaults = [
@@ -84,7 +85,7 @@
       </svg>
     </div>
   </div>
-  <div class="content mt-5  w-10/12">
+  <div class={$sftInfo? "content mt-5 w-full" : "content mt-5 w-8/12" } >
     {#if (view === "tile")}
       <div class="grid grid-cols-2 gap-5">
         {#each offchainAssetReceiptVaults as sft }

@@ -1,10 +1,11 @@
 <script>
     import Back from "../../components/Back.svelte";
+    import {sftInfo} from "../../scripts/store.js";
 </script>
 
 <div class="flex flex-col w-full">
   <Back/>
-  <div class="w-6/12 bg-white px-5 pb-5 flex items-center justify-center flex flex-col h-fit ipfs-container">
+  <div class={$sftInfo? "w-7/12 bg-white px-5 pb-5 flex items-center justify-center flex flex-col h-fit ipfs-container" : "w-5/12 bg-white px-5 pb-5 flex items-center justify-center flex flex-col h-fit ipfs-container"}>
     <span class="font-bold py-2">IPFS</span>
     <div class="frame w-full px-8 py-9 flex flex-col leading-9 font-medium">
       <div class="pb-5 flex justify-between">

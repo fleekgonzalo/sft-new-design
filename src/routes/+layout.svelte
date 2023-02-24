@@ -84,7 +84,7 @@
   </div>
   <div class="flex">
     <Navigation/>
-    <div class="flex ml-5 w-full">
+    <div class="flex mx-5 w-full">
       <slot></slot>
     </div>
   </div>

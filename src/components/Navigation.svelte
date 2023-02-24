@@ -1,22 +1,21 @@
 <script>
     import logo from "../assets/sft_logo.svg"
-
-    let sftInfo = false
+import {sftInfo} from "../scripts/store.js";
 
     function showSftInfo() {
-        sftInfo = true
+        sftInfo.set(true)
     }
 
     function hideSftInfo() {
-        sftInfo = false
+        sftInfo.set(false)
     }
 </script>
 <div id="Main"
-     class="{sftInfo ? 'flex justify-start items-start h-screen bg-white flex-col navigation relative'
+     class="{$sftInfo ? 'flex justify-start items-start h-screen bg-white flex-col navigation relative'
      : 'flex justify-start items-start h-screen bg-white flex-col navigation relative rounded-tr-3xl'}">
   <div class="flex justify-center items-center w-full space-x-3 logo-container">
     <img src={logo} alt="logo" class="border-8 border-white rounded-full"/>
-    {#if !sftInfo}
+    {#if !$sftInfo}
       <div class="cursor-pointer absolute right-2 top-2" on:click={()=>showSftInfo()}>
         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M14 10.3999L19 5.1999M19 5.1999L19 10.3999M19 5.1999L14 5.1999" stroke="#9D9D9D" stroke-width="2"
@@ -147,7 +146,7 @@
     </a>
   </div>
 </div>
-{#if (sftInfo)}
+{#if ($sftInfo)}
   <div class="bg-white w-5/12 rounded-tr-3xl relative border-l">
     <div class="cursor-pointer absolute right-2 top-2" on:click={()=>hideSftInfo()}>
       <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
