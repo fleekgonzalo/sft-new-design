@@ -87,10 +87,12 @@
         <a href="/asset-register"
            class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-text-black rounded py-2 font-bold">
           <div class="w-3">
-            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="16" height="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="4 2 16 20">
               <path
-                  d="M9.5 1H8H4C2.34315 1 1 2.34315 1 4V16C1 17.6569 2.34315 19 4 19H12C13.6569 19 15 17.6569 15 16V6.625M9.5 1L15 6.625M9.5 1V5.625C9.5 6.17728 9.94772 6.625 10.5 6.625H15"
+                  d="M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H16C17.6569 21 19 19.6569 19 18V8.625M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19"
                   stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9 13H15" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9 17H15" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
           <p class="text-base leading-4  ">Asset Register</p>
