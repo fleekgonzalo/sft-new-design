@@ -180,10 +180,6 @@ import {sftInfo} from "../scripts/store.js";
           <td class="sft-info">3,000,000</td>
         </tr>
         <tr>
-          <td class="font-bold">Gini Coefficient</td>
-          <td class="sft-info">0.79</td>
-        </tr>
-        <tr>
           <td class="font-bold">Token Supply</td>
           <td class="sft-info">123,000,000</td>
         </tr>

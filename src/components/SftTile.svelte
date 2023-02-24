@@ -34,10 +34,6 @@
       <td class="sft-info">{sft.holders}</td>
     </tr>
     <tr>
-      <td class="font-bold">Gini Coefficient</td>
-      <td class="sft-info">{sft.gini_coefficient}</td>
-    </tr>
-    <tr>
       <td class="font-bold">Token Supply</td>
       <td class="sft-info">{sft.token_supply}</td>
     </tr>

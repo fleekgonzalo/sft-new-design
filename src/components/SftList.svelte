@@ -11,7 +11,6 @@
     <th>Token Symbol</th>
     <th>Creation Date</th>
     <th>Number of holders</th>
-    <th>Gini Coefficient</th>
     <th>Token Supply</th>
     <th>Auditor(s)</th>
     <th>Name of issuer</th>
@@ -27,7 +26,6 @@
       <td class="sft-info">{sft.symbol}</td>
       <td class="sft-info">{sft.date}</td>
       <td class="sft-info">{sft.holders}</td>
-      <td class="sft-info">{sft.gini_coefficient}</td>
       <td class="sft-info">{sft.token_supply}</td>
       <td class="sft-info">{sft.auditors}</td>
       <td class="sft-info">{sft.issuer}</td>
