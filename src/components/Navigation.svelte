@@ -161,6 +161,45 @@
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </div>
+    <div class="flex flex-col py-5 px-9 ">
+      <span class="font-bold self-center">Token Overview</span>
+      <table class="w-8/12 leading-8 w-full mt-5 leading-10">
+        <tr>
+          <td class="font-bold">Token Name</td>
+          <td class="sft-name">OPUS</td>
+        </tr>
+        <tr>
+          <td class="font-bold">Token Symbol</td>
+          <td class="sft-info">OPS</td>
+        </tr>
+        <tr>
+          <td class="font-bold">Creation Date</td>
+          <td class="sft-info">30/09/2022</td>
+        </tr>
+        <tr>
+          <td class="font-bold">Number of holders</td>
+          <td class="sft-info">3,000,000</td>
+        </tr>
+        <tr>
+          <td class="font-bold">Gini Coefficient</td>
+          <td class="sft-info">0.79</td>
+        </tr>
+        <tr>
+          <td class="font-bold">Token Supply</td>
+          <td class="sft-info">123,000,000</td>
+        </tr>
+        <tr>
+          <td class="font-bold">Name of Auditor(s)</td>
+          <td class="sft-info">KPMG</td>
+        </tr>
+        <tr>
+          <td class="font-bold">Name of issuer</td>
+          <td class="sft-info">British Land</td>
+        </tr>
+      </table>
+      <span class="font-bold">About</span>
+
+    </div>
   </div>
 
 {/if}
