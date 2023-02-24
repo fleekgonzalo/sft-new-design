@@ -6,3 +6,15 @@ body {
     background-color: #dcdbdd;
     font-family: "Mukta", sans-serif;
 }
+.default-btn {
+    box-sizing: border-box;
+    padding: 0 40px;
+    gap: 10px;
+    min-width: 73px;
+    height: 27px;
+    border: 1px solid #9D7334;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: fit-content;
+    color: #9D7334;
+}

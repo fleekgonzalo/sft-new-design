@@ -30,7 +30,6 @@
     ]
 
     async function handleNetworkSelect(event) {
-        console.log(event)
         // let activeNet = event.detail.selected
         // let chainId = ethers.utils.hexValue(activeNet.chainId)
         // try {
@@ -40,30 +39,30 @@
         //     });
         //
         // } catch (switchError) {
-            // This error code indicates that the chain has not been added to MetaMask.
-            // if (switchError.code === 4902) {
-            //     try {
-            //         await window.ethereum.request({
-            //             method: "wallet_addEthereumChain",
-            //             params: [
-            //                 {
-            //                     chainId: chainId,
-            //                     chainName: activeNet.displayName,
-            //                     rpcUrls: [activeNet.rpcUrl],
-            //                     blockExplorerUrls: [activeNet.blockExplorer],
-            //                     nativeCurrency: {
-            //                         name: activeNet.currencySymbol,
-            //                         symbol: activeNet.currencySymbol,
-            //                         decimals: 18
-            //                     }
-            //                 }
-            //             ]
-            //         });
-            //     } catch (addError) {
-                    // handle "add" error
-                // }
-            // }
-            // handle other "switch" errors
+        // This error code indicates that the chain has not been added to MetaMask.
+        // if (switchError.code === 4902) {
+        //     try {
+        //         await window.ethereum.request({
+        //             method: "wallet_addEthereumChain",
+        //             params: [
+        //                 {
+        //                     chainId: chainId,
+        //                     chainName: activeNet.displayName,
+        //                     rpcUrls: [activeNet.rpcUrl],
+        //                     blockExplorerUrls: [activeNet.blockExplorer],
+        //                     nativeCurrency: {
+        //                         name: activeNet.currencySymbol,
+        //                         symbol: activeNet.currencySymbol,
+        //                         decimals: 18
+        //                     }
+        //                 }
+        //             ]
+        //         });
+        //     } catch (addError) {
+        // handle "add" error
+        // }
+        // }
+        // handle other "switch" errors
         // }
         // await networkChanged()
     }
@@ -217,7 +216,7 @@
         </a>
       </div>
     </div>
-    <slot></slot>
+      <slot></slot>
   </div>
 </div>
 
