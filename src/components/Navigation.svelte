@@ -1,23 +1,35 @@
 <script>
     import logo from "../assets/sft_logo.svg"
 
+    let sftInfo = false
+
+    function showSftInfo() {
+        sftInfo = true
+    }
+
+    function hideSftInfo() {
+        sftInfo = false
+    }
 </script>
 <div id="Main"
-     class="flex justify-start items-start h-screen bg-white flex-col rounded-tr-3xl navigation mr-5 relative">
+     class="{sftInfo ? 'flex justify-start items-start h-screen bg-white flex-col navigation relative'
+     : 'flex justify-start items-start h-screen bg-white flex-col navigation relative rounded-tr-3xl'}">
   <div class="flex justify-center items-center w-full space-x-3 logo-container">
     <img src={logo} alt="logo" class="border-8 border-white rounded-full"/>
-    <div class="cursor-pointer absolute right-2 top-2">
-      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M14 10.3999L19 5.1999M19 5.1999L19 10.3999M19 5.1999L14 5.1999" stroke="#9D9D9D" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M14 10.3999L19 5.1999M19 5.1999L19 10.3999M19 5.1999L14 5.1999" stroke="black" stroke-opacity="0.2"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M10 14.5601L5 19.7601M5 19.7601L5 14.5601M5 19.7601H10" stroke="#9D9D9D" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M10 14.5601L5 19.7601M5 19.7601L5 14.5601M5 19.7601H10" stroke="black" stroke-opacity="0.2"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
+    {#if !sftInfo}
+      <div class="cursor-pointer absolute right-2 top-2" on:click={()=>showSftInfo()}>
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 10.3999L19 5.1999M19 5.1999L19 10.3999M19 5.1999L14 5.1999" stroke="#9D9D9D" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14 10.3999L19 5.1999M19 5.1999L19 10.3999M19 5.1999L14 5.1999" stroke="black" stroke-opacity="0.2"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M10 14.5601L5 19.7601M5 19.7601L5 14.5601M5 19.7601H10" stroke="#9D9D9D" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M10 14.5601L5 19.7601M5 19.7601L5 14.5601M5 19.7601H10" stroke="black" stroke-opacity="0.2"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    {/if}
   </div>
   <div class="mt-6 flex flex-col justify-start items-center pl-5 w-full">
     <a href=""
@@ -135,6 +147,24 @@
     </a>
   </div>
 </div>
+{#if (sftInfo)}
+  <div class="bg-white w-5/12 rounded-tr-3xl relative border-l">
+    <div class="cursor-pointer absolute right-2 top-2" on:click={()=>hideSftInfo()}>
+      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.96387 5L10.9731 10M10.9731 10V5M10.9731 10H5.96387" stroke="#9D9D9D" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5.96387 5L10.9731 10M10.9731 10V5M10.9731 10H5.96387" stroke="black" stroke-opacity="0.2"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M19.9902 19L14.981 14M14.981 14L14.981 19M14.981 14L19.9902 14" stroke="#9D9D9D" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M19.9902 19L14.981 14M14.981 14L14.981 19M14.981 14L19.9902 14" stroke="black" stroke-opacity="0.2"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+
+{/if}
+
 <style>
 
     .text-nav {
