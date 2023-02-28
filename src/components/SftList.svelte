@@ -34,10 +34,6 @@
   </tbody>
 </table>
 <style>
-    .sft-list-view-table{
-
-    }
-
     .sft-name {
         color: #9D7334;
     }
