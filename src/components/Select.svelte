@@ -47,6 +47,6 @@
 </div>
 <style>
     .dropdown {
-        background: rgba(44, 44, 84, 0.33);
+        background: #A2A1B0;
     }
 </style>
