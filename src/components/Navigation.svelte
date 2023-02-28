@@ -16,7 +16,7 @@
      class="{$sftInfo ? 'flex justify-start items-start h-screen bg-white flex-col navigation relative'
      : 'flex justify-start items-start h-screen bg-white flex-col navigation relative rounded-tr-3xl'}">
   <div class="flex justify-center items-center w-full space-x-3 logo-container">
-    <img src={logo} alt="logo" class="border-8 border-white rounded-full"/>
+    <a href="/"><img src={logo} alt="logo" class="border-8 border-white rounded-full"/></a>
     {#if !$sftInfo}
       <div class="cursor-pointer absolute right-2 top-2" on:click={()=>showSftInfo()}>
         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -224,7 +224,7 @@
         background: #ECECEC
     }
 
-    .active{
+    .active {
         background: #CAE6FF;
     }
 

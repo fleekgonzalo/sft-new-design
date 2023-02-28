@@ -14,8 +14,6 @@
 
     $: path = $page.url.pathname;
 
-
-    activeNetwork.set(networks[3])
     let connectedAccount;
     let isMetamaskInstalled;
 
@@ -160,7 +158,6 @@
     async function getMetamaskConnectedAccount() {
         if (isMetamaskInstalled) {
             const accounts = await $ethersData.provider.listAccounts();
-            console.log(accounts)
             return accounts.length > 0 ? accounts[0] : null;
         }
     }
