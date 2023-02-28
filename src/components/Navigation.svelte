@@ -98,7 +98,7 @@
       <p class="text-base leading-5  ">Audits</p>
     </a>
     <a href="/asset-register"
-       class:active={path==='/asser-register'}
+       class:active={path==='/asset-register'}
        class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-item rounded py-2 font-bold pl-5">
       <div class="w-3">
         <svg width="16" height="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="4 2 16 20">
