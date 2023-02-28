@@ -9,6 +9,12 @@
     import Navigation from "../components/Navigation.svelte";
     import {onMount} from "svelte";
 
+    import { page } from '$app/stores';
+    let path;
+
+    $: path = $page.url.pathname;
+
+
     activeNetwork.set(networks[3])
     let connectedAccount;
     let isMetamaskInstalled;
@@ -34,6 +40,7 @@
     ]
 
     onMount(async () => {
+
         isMetamaskInstalled = typeof window.ethereum !== "undefined"
 
         await getEthersData()
@@ -174,7 +181,7 @@
     </div>
   </div>
   <div class="flex">
-    <Navigation/>
+    <Navigation path={path}/>
     <div class="flex mx-5 w-full">
       <slot></slot>
     </div>

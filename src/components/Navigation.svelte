@@ -1,6 +1,6 @@
 <script>
     import logo from "../assets/sft_logo.svg"
-import {sftInfo} from "../scripts/store.js";
+    import {sftInfo} from "../scripts/store.js";
 
     function showSftInfo() {
         sftInfo.set(true)
@@ -9,6 +9,8 @@ import {sftInfo} from "../scripts/store.js";
     function hideSftInfo() {
         sftInfo.set(false)
     }
+
+    export let path = "/"
 </script>
 <div id="Main"
      class="{$sftInfo ? 'flex justify-start items-start h-screen bg-white flex-col navigation relative'
@@ -30,13 +32,14 @@ import {sftInfo} from "../scripts/store.js";
       </div>
     {/if}
   </div>
-  <div class="mt-6 flex flex-col justify-start items-center pl-5 w-full">
+  <div class="mt-6 flex flex-col justify-start items-center w-full">
     <a href=""
-       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400 rounded py-2 text-nav font-semibold">
-      <p class="text-base leading-4">SFT</p>
+       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400 rounded py-2 text-nav font-semibold pl-5">
+      <p class="text-base leading-5">SFT</p>
     </a>
     <a href="/"
-       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-text-black rounded py-2 font-bold">
+       class:active={path==='/'}
+       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-item rounded py-2 font-bold pl-5">
       <div class="w-3">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -44,10 +47,11 @@ import {sftInfo} from "../scripts/store.js";
               stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
-      <p class="text-base leading-4  ">Home</p>
+      <p class="text-base leading-5  ">Home</p>
     </a>
     <a href="/mint"
-       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-text-black rounded py-2 font-bold">
+       class:active={path==='/mint'}
+       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-item rounded py-2 font-bold pl-5">
       <div class="w-3">
         <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -55,10 +59,11 @@ import {sftInfo} from "../scripts/store.js";
               stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
-      <p class="text-base leading-4  ">Mint/Redeem</p>
+      <p class="text-base leading-5  ">Mint/Redeem</p>
     </a>
     <a href="/members"
-       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-text-black rounded py-2 font-bold">
+       class:active={path==='/members'}
+       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-item rounded py-2 font-bold pl-5">
       <div class="w-3">
         <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -66,10 +71,11 @@ import {sftInfo} from "../scripts/store.js";
               stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
-      <p class="text-base leading-4  ">Members</p>
+      <p class="text-base leading-5  ">Members</p>
     </a>
     <a href="/roles"
-       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-text-black rounded py-2 font-bold">
+       class:active={path==='/roles'}
+       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-item rounded py-2 font-bold pl-5">
       <div class="w-3">
         <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -77,10 +83,11 @@ import {sftInfo} from "../scripts/store.js";
               stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
-      <p class="text-base leading-4  ">SFT Roles</p>
+      <p class="text-base leading-5  ">SFT Roles</p>
     </a>
     <a href="/audits"
-       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-text-black rounded py-2 font-bold">
+       class:active={path==='/audits'}
+       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-item rounded py-2 font-bold pl-5">
       <div class="w-3">
         <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -88,10 +95,11 @@ import {sftInfo} from "../scripts/store.js";
               stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
-      <p class="text-base leading-4  ">Audits</p>
+      <p class="text-base leading-5  ">Audits</p>
     </a>
     <a href="/asset-register"
-       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-text-black rounded py-2 font-bold">
+       class:active={path==='/asser-register'}
+       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-item rounded py-2 font-bold pl-5">
       <div class="w-3">
         <svg width="16" height="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="4 2 16 20">
           <path
@@ -101,10 +109,11 @@ import {sftInfo} from "../scripts/store.js";
           <path d="M9 17H15" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
-      <p class="text-base leading-4  ">Asset Register</p>
+      <p class="text-base leading-5  ">Asset Register</p>
     </a>
     <a href="/manual"
-       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-text-black rounded py-2 font-bold">
+       class:active={path==='/manual'}
+       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-item rounded py-2 font-bold pl-5">
       <div class="w-3">
         <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -112,17 +121,18 @@ import {sftInfo} from "../scripts/store.js";
               stroke="#575757" stroke-width="2" stroke-linecap="round"/>
         </svg>
       </div>
-      <p class="text-base leading-4  ">Manual</p>
+      <p class="text-base leading-5  ">Manual</p>
     </a>
   </div>
   <div class="items-center pt-16 border-b w-11/12 self-center"></div>
-  <div class="mt-6 flex flex-col justify-start items-center pl-5 w-full">
+  <div class="mt-6 flex flex-col justify-start items-center w-full">
     <a href=""
-       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400 rounded py-2 text-nav font-semibold">
-      <p class="text-base leading-4">Web 3</p>
+       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400 rounded py-2 text-nav font-semibold pl-5">
+      <p class="text-base leading-5">Web 3</p>
     </a>
     <a href="/ipfs"
-       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-text-black rounded py-2 font-bold">
+       class:active={path==='/ipfs'}
+       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-item rounded py-2 font-bold pl-5">
       <div class="w-3">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -132,17 +142,18 @@ import {sftInfo} from "../scripts/store.js";
           <circle cx="11.5" cy="10.5" r="1.5" fill="#575757"/>
         </svg>
       </div>
-      <p class="text-base leading-4  ">IPFS</p>
+      <p class="text-base leading-5  ">IPFS</p>
     </a>
     <a href="/sft-setup"
-       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-text-black rounded py-2 font-bold">
+       class:active={path==='/sft-setup'}
+       class="flex jusitfy-start items-center space-x-6 w-full  focus:outline-none  focus:text-indigo-400  nav-item rounded py-2 font-bold pl-5">
       <div class="w-3">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="9" cy="9" r="8" stroke="#575757" stroke-width="2" stroke-linecap="round"
                   stroke-linejoin="round"/>
         </svg>
       </div>
-      <p class="text-base leading-4  ">SFT Setup</p>
+      <p class="text-base leading-5  ">SFT Setup</p>
     </a>
   </div>
 </div>
@@ -205,8 +216,16 @@ import {sftInfo} from "../scripts/store.js";
         color: #5F9AD1;
     }
 
-    .nav-text-black {
+    .nav-item {
         color: #575757;
+    }
+
+    .nav-item:hover {
+        background: #ECECEC
+    }
+
+    .active{
+        background: #CAE6FF;
     }
 
     .logo-container {
