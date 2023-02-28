@@ -21,6 +21,13 @@
     function toggleDropdown() {
         show = !show
     }
+
+    function commitAction(option) {
+        if (option.action) {
+            option.action()
+        }
+        onSelect(option)
+    }
 </script>
 
 <div>
@@ -35,7 +42,7 @@
   {#if show}
     <div class="flex flex-col pl-3 px-5 items-start absolute top-14 dropdown rounded-b-md z-10">
       {#each options as option}
-        <button class="py-1 flex items-center" type="button" on:click={()=>onSelect(option)}>
+        <button class="py-1 flex items-center" type="button" on:click={()=>commitAction(option)}>
           {#if option.icon}
             <img class="pr-3" src={icons[option.icon]} alt={option?.displayName}/>
           {/if}
