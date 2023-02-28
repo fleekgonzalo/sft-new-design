@@ -1,9 +1,9 @@
-import {BigNumber} from "@ethersproject/bignumber"
+import {ethers} from "ethers";
 
 export const ADDRESS_ZERO = "0x0000000000000000000000000000000000000000";
 export const TEST_CONTRACT_ADDRESS = "0x1cf0ab6cf30a8aea01e82cd6d831845fec4363a3";
 
-export const ONE = BigNumber.from("1000000000000000000");
+export const ONE =  ethers.BigNumber.from("1000000000000000000")
 export const ROLES = [
     {roleName: "DEPOSITOR", hash: "0xe16b3d8fc79140c62874442c8b523e98592b429e73c0db67686a5b378b29f336", roleHolders:[]},
     {roleName: "DEPOSITOR_ADMIN", hash: "0xc091f023e1c6780346fd5f1017395079a3ea0e07d94a4f9e7273a43e3fa2a7e8", roleHolders:[]},
